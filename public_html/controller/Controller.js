@@ -19,10 +19,14 @@ classController.prototype = {
     },
     
     getListMessages: function(){
-        var smsAPI = "http://68.233.227.228/myapps/smsServices/public/sms/getList?jsoncallback=?";
+        var params = {
+            'hola': 'hola'
+        };
+        var smsAPI = "http://68.233.227.228/myapps/smsServices/public/sms/getList?callback=?";
         $.getJSON(smsAPI, {
             tags: "mount rainier",
             tagmode: "any",
+            data: params,
             format: "json"
         }).done(function(data) {
             console.log(data);
