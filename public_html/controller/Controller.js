@@ -19,9 +19,8 @@ classController.prototype = {
     },
     
     getListMessages: function(){
-        
-         var flickerAPI = "http://68.233.227.228/myapps/smsServices/public/sms/getList?jsoncallback=?";
-        $.getJSON(flickerAPI, {
+        var smsAPI = "http://68.233.227.228/myapps/smsServices/public/sms/getList?jsoncallback=?";
+        $.getJSON(smsAPI, {
             tags: "mount rainier",
             tagmode: "any",
             format: "json"
