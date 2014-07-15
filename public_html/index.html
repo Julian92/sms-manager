@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SMS Manager</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="js/libs/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        
+        <script id="navbar-template" type="text/x-handlebars-template">
+            <div class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">SMS Manager</a>
+                    </div>
+                    <div class="navbar-collapse collapse navbar-responsive-collapse">
+                        <form class="navbar-form navbar-left">
+                            <input class="form-control col-lg-8" placeholder="Search" type="text">
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Nuevo Mensaje</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{name}} <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Cuenta</a></li>
+                                    <li><a href="#">Salir</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </script>
+        
+        
+        <div id="wrapperApp">
+            <section id="navBarApp">
+                navbar
+            </section>
+            
+            <!-- section main-->
+            <section id="mainContent">
+                ¡main content section!
+            </section>
+            
+        </div>
+
+        <script src="js/libs/jquery/jquery.js"></script>
+        <script src="js/libs/handlebars.js/handlebars.js"></script>
+        <script src="js/libs/twitter-bootstrap/js/bootstrap.js"></script>
+        <script src="controller/Controller.js"></script>
+    </body>
+</html>
